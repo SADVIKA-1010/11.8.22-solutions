@@ -1,0 +1,12 @@
+int arrangeCoins(int n){
+    int i=1;
+    while(n>0)
+    {
+        n=n-i;  // 5-1 =4
+        i=i+1;
+        if(n<i)
+        break;
+    }
+    return(i-1);
+
+}
